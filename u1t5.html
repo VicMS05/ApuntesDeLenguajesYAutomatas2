@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Apuntes de lenguajes y automatas II</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/harry.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <script src="js/insertarHTML.js"></script>
+</head>
+
+<body>
+  <div w3-include-html="menu.html"></div>
+  <div id="body">
+    <h1>Esquema de traducción</h1>
+    <img src="https://1.bp.blogspot.com/_xmAGx5TnIKk/SqLYGOpIgsI/AAAAAAAAACA/0hVDyjrjQtA/s320/Dibujo6.jpg" alt="Imagen alusiva al tema">
+    <p>Un esquema de traducción es una gramática independiente del contexto en la que se asocian atributos con los
+      símbolos gramaticales y se insertan acciones semánticas encerradas entre llaves { } dentro de los lados derechos
+      de las producciones. Los fragmentos de código insertados se denominan acciones semánticas. Estos fragmentos
+      actúan, calculan y modifican los atributos asociados con los nodos del árbol sintáctico.
+      <br><br>
+      Para poder aplicar un esquema de traducción, se debe construir el árbol sintáctico y después aplicar las acciones
+      empotradas en las reglas en el orden de recorrido primero-profundo. Si la gramática es ambigua, una frase podría
+      tener dos árboles y la ejecución de las acciones para ellos podría dar lugar a diferentes resultados.
+      <br><br>
+      Un ejemplo de un esquema de traducción:
+    </p>
+
+    <div id="ejemplo">
+      <p>L -> E n { print(E.val); }<br>
+        E -> E1 + T { E.val = E1.val + T.val; }<br>
+        E -> T { E.val = T.val; }<br>
+        T -> T1 * F { T.val = T1.val * F.val; }<br>
+        T -> F { T.val = F.val; }<br>
+        F -> ( E ) { F.val = E.val; }<br>
+        F -> digit { F.val = digit.lexval; }</p>
+    </div>
+
+    <p>En este esquema de traducción, cada producción de la gramática tiene asociada una acción semántica que se ejecuta
+      cuando se aplica esa producción. Por ejemplo, en la producción <em>E -> E1 + T { E.val = E1.val + T.val; }</em>,
+      la acción semántica <em>{ E.val = E1.val + T.val; }</em> se ejecuta cuando se aplica la producción, y calcula el
+      valor de <em>E</em> como la suma de los valores de <em>E1</em> y <em>T4.</em></p>
+    <br><br><br><br><br>
+    <p id="bibliografia">Bibliografía:<br><br>▷ Esquema de traducción ¡Fotos & guía 2024! (2020, 28 septiembre). Esquema.net. https://esquema.net/traduccion/<br>1.5 Esquema de traducción_Automatas II. (2023, 8 septiembre). Genially. https://view.genial.ly/64ebbec33bf5a30012abf556/presentation-15-esquema-de-traduccionautomatas-ii<br>Esquemas de traducción: conceptos. (s. f.). https://campusvirtual.ull.es/ocw/pluginfile.php/2208/mod_resource/content/0/perlexamples/node262.html<br>Next, G. M. O. P. (s. f.). Esquemas de traduccion. prezi.com. https://prezi.com/nbvub1lwe25f/esquemas-de-traduccion/</p>
+  </div>
+  <script>
+    includeHTML();
+  </script>
+</body>
+
+</html>

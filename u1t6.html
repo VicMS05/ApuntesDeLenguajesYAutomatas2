@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Apuntes de lenguajes y automatas II</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/harry.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <script src="js/insertarHTML.js"></script>
+</head>
+
+<body>
+  <div w3-include-html="menu.html"></div>
+  <div id="body">
+    <h1>Generación de la tabla de símbolo y tabla de direcciones</h1>
+    <img
+      src="https://blogger.googleusercontent.com/img/a/AVvXsEjBe8OGVuAW6Y0S8A-2uDDuPwSYRBHYQbJkPD8R1ilXRYXotNEPsVQhujcSQ7FxnpIF7VJ9x2gydRTi1aMsEVnuWpHXNDkEOfDcg3ZwYY3VSE88i71fAszPNEbqr9_mSFHibbMAdjv13nQti_GeLFfOKu_HwUtr2tyO4XokP02BOQhOEmH755zW_g=s567"
+      alt="Imagen alusiva al tema">
+    <p>La generación de la tabla de símbolos y la tabla de direcciones son dos componentes fundamentales en el proceso
+      de compilación de un programa.
+      <br><br>
+      <strong>Tabla de Símbolos:</strong> Una tabla de símbolos es una estructura de datos que almacena toda la
+      información de los identificadores del lenguaje fuente. Los atributos de un identificador pueden obtenerse
+      directamente del análisis del programa fuente o de forma implícita a través del contexto en el que aparece el
+      elemento en el programa fuente. Los atributos pueden incluir el nombre del elemento, el tipo del elemento, la
+      dirección de memoria en que se almacenará su valor en tiempo de ejecución, el valor del elemento y el número de
+      dimensiones (si el elemento es un array).
+      <br><br>
+      <strong>Tabla de Direcciones:</strong> La tabla de direcciones es una estructura de datos que se utiliza en los
+      switches para mantener un registro de las direcciones MAC de los dispositivos conectados a la red. La dirección
+      MAC es un identificador único asignado a cada tarjeta de red en un dispositivo y se utiliza para identificar y
+      comunicarse con dispositivos en la red local (LAN).
+      <br><br>
+      Un ejemplo de un esquema de traducción que podría usarse para generar una tabla de símbolos:
+    </p>
+    <div id="ejemplo">
+      <p>L -> E n { print(E.val); }<br>
+        E -> E1 + T { E.val = E1.val + T.val; }<br>
+        E -> T { E.val = T.val; }<br>
+        T -> T1 * F { T.val = T1.val * F.val; }<br>
+        T -> F { T.val = F.val; }<br>
+        F -> ( E ) { F.val = E.val; }<br>
+        F -> digit { F.val = digit.lexval; }</p>
+    </div>
+
+    <p>En este esquema de traducción, cada producción de la gramática tiene asociada una acción semántica que se ejecuta
+      cuando se aplica esa producción. Por ejemplo, en la producción <em>E -> E1 + T { E.val = E1.val + T.val; }</em>,
+      la acción semántica <em>{ E.val = E1.val + T.val; }</em> se ejecuta cuando se aplica la producción, y calcula el
+      valor de <em>E</em> como la suma de los valores de <em>E1</em> y <em>T4</em>.
+
+    </p>
+    <br><br><br><br><br>
+    <p id="bibliografia">Bibliografía:<br><br>M, G. P. (2022, 28 febrero). Hoja de trucos de Subred: Máscara de Subred 24, 30, 26, 27, 29, y otras referencias de red CIDR de dirección IP. freeCodeCamp.org. https://www.freecodecamp.org/espanol/news/hoja-de-trucos-de-subred-mascara-de-subred-24-30-26-27-29-y-otras-referencias-de-red-cidr-de-direccion-ip/<br>Studocu. (s. f.-a). Generación de una tabla de símbolos y de direcciones - GeneraciÛn de una tabla de sÌmbolos. Una - Studocu. https://www.studocu.com/es-mx/document/instituto-tecnologico-de-tapachula/mercadotecnia/generacion-de-una-tabla-de-simbolos-y-de-direcciones/34416337<br>Studocu. (s. f.-b). Mora Espinosa - 1.6 Generación de la tabla de símbolo y tabla de direcciones - TECNOLÓGICO NACIONAL - Studocu. https://www.studocu.com/es-mx/document/instituto-tecnologico-de-tijuana/lenguajes-y-automatas-ii/mora-espinosa-16-generacion-de-la-tabla-de-simbolo-y-tabla-de-direcciones/23591668<br>Unidad I - Ánalisis semántico - Lenguajes y autómatas II. (s. f.). Lenguajes y Autómatas II. https://5e344735705b1.site123.me/unidad-i-%C3%81nalisis-sem%C3%A1ntico<br>Walton, A. (2023, 10 enero). Tabla de direcciones MAC » CCNA desde cero. CCNA desde Cero. https://ccnadesdecero.es/tabla-direcciones-mac/</p>
+  </div>
+  <script>
+    includeHTML();
+  </script>
+</body>
+
+</html>

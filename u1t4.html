@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Apuntes de lenguajes y automatas II</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/harry.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <script src="js/insertarHTML.js"></script>
+</head>
+
+<body>
+  <div w3-include-html="menu.html"></div>
+  <div id="body">
+    <h1>Pila semántica en un analizador sintáctico</h1>
+    <img src="https://th.bing.com/th/id/R.9a67f071765c3647f80495bd88a39f60?rik=rj0F7rQ5SPBl%2bw&pid=ImgRaw&r=0"
+      alt="Imagen alusiva al tema">
+    <p>La pila semántica juega un papel fundamental en el desarrollo de cualquier analizador semántico. Dentro de cada
+      elemento de la pila se guardan los valores que pueden tener una expresión. Un analizador sintáctico ascendente
+      utiliza una pila para guardar información acerca de los sub-árboles que ya han sido analizados. Se pueden utilizar
+      campos adicionales en la pila del analizador para guardar los valores de los atributos sintetizados.
+      <br><br>
+      Por ejemplo, si se tiene la expresión ((1+2)*4)+3, se genera el árbol de análisis sintáctico (árbol de la
+      expresión) y se guarda todo en la pila para realizar posteriormente su “evaluación”. Aquí se toman en cuenta las
+      reglas semánticas (conjunto de normas y especificaciones que definen al lenguaje) y se buscan posibles errores
+      semánticos.
+      <br><br>
+      Para evaluar la expresión, se deben tener siempre 1 Operador y 2 Operandos (1 Signo y 2 valores), en caso de no
+      ser así, se recorre la pila hasta cumplir la condición, se actualiza la pila y se usa en forma recursiva la misma
+      regla1. Este proceso se repite hasta dejar la pila vacía.
+    </p>
+    <br><br><br><br><br>
+    <p id="bibliografia">Bibliografía:<br><br>1.4 Pila semantica del analizador sintactico [1430V5JKKO4J]. (s. f.). https://idoc.pub/documents/14-pila-semantica-del-analizador-sintactico-1430v5jkko4j<br>Studocu. (s. f.). 1.4 Pila semántica en analizador sintáctico - Pila semántica en analizador sintáctico La pila - Studocu. https://www.studocu.com/es-mx/document/instituto-tecnologico-de-oaxaca/lenguajes-y-automatas-ii/14-pila-semantica-en-analizador-sintactico/8456952</p>
+  </div>
+  <script>
+    includeHTML();
+  </script>
+</body>
+
+</html>

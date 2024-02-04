@@ -1,0 +1,76 @@
+body {
+    background-image: url("https://th.bing.com/th/id/R.e04cfbc0117b025b32137598d21838c3?rik=qB1riIbclcuLrQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fdLB5ai0.jpg&ehk=f6Y4fm%2bh6t%2bhtbOQQtHXCJMpQtxa0ITuQ2RlHARX3LQ%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+}
+
+#body {
+    margin: 20px;
+    margin-top: 15%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 50px;
+}
+
+#body h1 {
+    color: black;
+}
+
+img {
+    width: 25%;
+    border-radius: 10%;
+    margin: 20px;
+}
+
+p {
+    font-size: 120%;
+    margin: 20px;
+}
+
+ul {
+    font-size: 120%;
+    margin: 20px;
+    margin-left: 5%;
+    padding: 20px;
+    text-align: left;
+}
+
+ol {
+    font-size: 120%;
+    margin: 20px;
+    margin-left: 5%;
+    padding: 20px;
+    text-align: left;
+
+}
+
+#ejemplo {
+    font-size: 110%;
+    margin: 4% auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#renglon1 {
+    text-indent: 2%;
+    font-size: 110%;
+}
+
+#renglon2 {
+    font-size: 110%;
+    text-indent: 4%;
+}
+
+#bibliografia {
+    font-size: 110%;
+    margin: 20px;
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    font-style: italic;
+}

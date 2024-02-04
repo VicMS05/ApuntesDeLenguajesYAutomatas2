@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Apuntes de lenguajes y automatas II</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/harry.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <script src="js/insertarHTML.js"></script>
+</head>
+
+<body>
+  <div w3-include-html="menu.html"></div>
+  <div id="body">
+    <h1>Comprobaciones de tipos en expresiones</h1>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190801154515/Types-of-Expressions.jpg"
+      alt="Imagen alusiva al tema">
+    <p>Las comprobaciones de tipos en expresiones son esenciales en programación para garantizar que los datos
+      manipulados sean del tipo correcto, evitando errores como la concatenación de tipos incompatibles o operaciones
+      matemáticas inválidas. Estas comprobaciones pueden ser de tres tipos:</p>
+    <br>
+    <ol>
+      <li>Comprobación estática: Se realiza durante la fase de compilación y se basa en el uso de artefactos y
+        mecanismos propios de dicha fase.</li>
+      <li>Comprobación dinámica: No se realiza durante la fase de compilación y se delega al momento de la ejecución del
+        programa.</li>
+      <li>Comprobación mixta: Combina aspectos de las comprobaciones estáticas y dinámicas.</li>
+    </ol>
+    <br>
+    <p>Además, existen dos tareas importantes relacionadas con las comprobaciones de tipos:</p>
+    <br>
+    <ul>
+      <li>Inferencia de tipos: En lenguajes sin tipificación de variables o con sobrecarga, se aplican tareas de
+        inferencia de tipos en el nivel gramatical de las expresiones para resolver el tipo de datos de la expresión
+        resultante en función del contexto de evaluación.</li>
+      <li>Verificación de tipos: Comprueba la compatibilidad de tipos de todas las expresiones del código fuente
+        recuperando la información durante la gestión de declaraciones.</li>
+    </ul>
+    <p>Un ejemplo de comprobación de tipos en expresiones:</p>
+    <div id="ejemplo">
+      <p>int c, d;
+        <br><br><br>
+        int f (int a, int b) {
+      </p>
+      <p id="renglon1">if (c > 0)</p>
+      <p id="renglon2">return (a+b)*d*c;</p>
+      <p>}</p>
+    </div>
+    <p>En este código, si intentamos compilarlo y c no es de tipo int, obtendremos un error de tipo en la línea 4:
+      <em>Type
+        Error at line 4: Incompatible types with operator '>'</em>
+    </p>
+    <br><br><br><br><br>
+    <p id="bibliografia">Bibliografía:<br><br>1.3.- Comprobaciones de tipos en expresiones. (2020, 2 enero). Lenguajes y
+      Autómatas II.
+      https://5e344735705b1.site123.me/unidad-i-%C3%81nalisis-sem%C3%A1ntico/13-comprobaciones-de-tipos-en-expresiones<br>1.3
+      Comprobaciones de tipos en expresiones. (2023, 28 agosto). Genially.
+      https://view.genial.ly/64e05650fbf62b0012b42fe5/presentation-13-comprobaciones-de-tipos-en-expresiones<br>Comprobación
+      de tipos: las expresiones. (s. f.).
+      https://campusvirtual.ull.es/ocw/pluginfile.php/2208/mod_resource/content/0/perlexamples/node302.html<br>COMPROBACIONES
+      DE TIPOS DE EXPRESIONES. (2021, 28 abril). Genially.
+      https://view.genial.ly/6089a1c5fdda810d5e287a8a/presentation-comprobaciones-de-tipos-de-expresiones<br>Comprobaciones
+      de tipos en expresiones. (2023, 4 noviembre). Genially.
+      https://view.genial.ly/6545d1952e302900127db819/presentation-comprobaciones-de-tipos-en-expresiones<br>Studocu.
+      (s. f.). Comprobación DE Tipos DE expresiones - Tecnológico de Estudios Superiores del Oriente del Estado de -
+      StudoCu.
+      https://www.studocu.com/es-mx/document/tecnologico-de-estudios-superiores-del-oriente-del-estado-de-mexico/introduccion-a-las-tecnologias-de-la-informacion-y-comunicacion/comprobacion-de-tipos-de-expresiones/17895078
+    </p>
+  </div>
+  <script>
+    includeHTML();
+  </script>
+</body>
+
+</html>
