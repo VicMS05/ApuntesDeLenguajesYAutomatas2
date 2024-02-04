@@ -10,6 +10,7 @@
       font-family: "Times New Roman", serif;
       color: white;
       text-align: center;
+      font-size: 150%;
     }
 
     nav {
@@ -28,7 +29,7 @@
 
     #titulo {
       text-decoration: none;
-      font-size: 150%;
+      font-size: 1.75vw;
     }
 
     nav ul {
@@ -48,21 +49,35 @@
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      font-size: 90%;
+      font-size: 1.25vw;
     }
 
-    li a:hover {
+    .dropbtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li a:hover,
+    .dropbtn:hover {
       background-color: #111111;
     }
 
-    nav li p {
+    li div p {
       display: block;
       color: white;
       text-align: center;
-      padding: 14px 16px;
-      margin: 0%;
-      font-size: 120%;
+      padding: 1vw 1.25vw;
+      margin: 0;
+      font-size: 1.5vw;
       cursor: default;
+    }
+
+    li div img {
+      margin: 0;
+      margin-right: 1.25vw;
+      width: 0.75vw;
+      height: 0.75vw;
     }
 
     .dropdown-content {
@@ -88,7 +103,10 @@
     <ul>
       <!-- <li><a href="index.html">Inicio</a></li> -->
       <li class="dropdown">
-        <p class="dropbtn">Unidad I</p>
+        <div class="dropbtn">
+          <p>Unidad I</p>
+          <img src="img/FlechaAbajo.png" alt="Flecha">
+        </div>
         <div class="dropdown-content">
           <a href="u1t1.html">Árboles de expresiones</a>
           <a href="u1t2.html">Acciones semánticas de un analizador sintáctico</a>
@@ -100,7 +118,10 @@
         </div>
       </li>
       <li class="dropdown">
-        <p class="dropbtn">Unidad II</p>
+        <div class="dropbtn">
+          <p>Unidad II</p>
+          <img src="img/FlechaAbajo.png" alt="Flecha">
+        </div>
         <div class="dropdown-content">
           <!-- <a href="#">Opción 1</a>
                     <a href="#">Opción 2</a>
@@ -112,7 +133,10 @@
         </div>
       </li>
       <li class="dropdown">
-        <p class="dropbtn">Unidad III</p>
+        <div class="dropbtn">
+          <p>Unidad III</p>
+          <img src="img/FlechaAbajo.png" alt="Flecha">
+        </div>
         <div class="dropdown-content">
           <!-- <a href="#">Opción 1</a>
                     <a href="#">Opción 2</a>
@@ -124,7 +148,10 @@
         </div>
       </li>
       <li class="dropdown">
-        <p class="dropbtn">Unidad IV</p>
+        <div class="dropbtn">
+          <p>Unidad IV</p>
+          <img src="img/FlechaAbajo.png" alt="Flecha">
+        </div>
         <div class="dropdown-content">
           <!-- <a href="#">Opción 1</a>
                     <a href="#">Opción 2</a>
