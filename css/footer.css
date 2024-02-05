@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+footer {
+    background-color: #222222;
+    padding: 1.5vw 0;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-size: 150%;
+    margin: 2.5vh;
+}
+
+#integrantes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.integrante {
+    width: 20vw;
+}
+
+.integrante p {
+    font-size: 100%;
+    margin: 0;
+    margin-bottom: 1.5vw;
+}
+
+footer img {
+    width: 7.5vw;
+    margin: 0.5vw;
+}
