@@ -8,7 +8,7 @@ body {
 
 #body {
     margin: 1.5vw;
-    margin-top: calc(14vw);
+    margin-top: calc((5vh + 25vw)/2);
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -21,7 +21,7 @@ body {
 }
 
 img {
-    width: 250px;
+    width: 50vw;
     border-radius: 10%;
     margin: 5vh;
 }
@@ -70,6 +70,24 @@ ol {
 #renglon2 {
     text-indent: 4%;
     font-size: 90%;
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    width: 90%;
+    font-size: 140%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid black;
+    /* Add border to table cells */
+    margin: 0;
+    padding: 0.5vw;
+    text-align: center;
+
 }
 
 #bibliografia {
