@@ -8,7 +8,7 @@ body {
 
 #body {
     margin: 1.5vw;
-    margin-top: calc((5vh + 25vw)/2);
+    /* margin-top: calc((5vh + 25vw)/2); */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -29,6 +29,11 @@ img {
 p {
     font-size: 3.25vh;
     margin: 1.5vw;
+}
+
+#body h2 {
+    font-size: 4vh;
+    margin: 5vw;
 }
 
 ul {
