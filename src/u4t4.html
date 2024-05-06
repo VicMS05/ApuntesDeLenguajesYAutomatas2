@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Apuntes de lenguajes y automatas II</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/harry.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="icon" href="../img/logo.png" type="image/png">
+  <script src="../js/insertarHTML.js"></script>
+</head>
+
+<body>
+  <div w3-include-html="menu.html"></div>
+  <div id="body">
+    <h1>4.4 Administración de memoria</h1>
+    <img src="https://l-byte0.github.io/Lenguajes-Automatas-ll/img/unidadCuatro/admin.jpg"
+      alt="Imagen alusiva al tema">
+      <p>La administración de la memoria es un proceso muy importante en la computación, y su buen o mal uso tiene una acción directa sobre el desempeño de la memoria. <br><br><b>Propósito:</b> La administración de la memoria tiene varios propósitos:</p>
+      <ul>
+        <li><b>Protección:</b> Si varios programas comparten la memoria principal, se debería asegurar que un programa no sea capaz de cambiar las ubicaciones no pertenecientes a él.</li>
+        <li><b>Compartimiento:</b> A veces es necesario para los usuarios poder compartir y actualizar información (por ejemplo, en una base de datos) y, si se organiza la tarea de entrada a la misma, se puede evitar el tener varias copias de la rutina.</li>
+        <li><b>Reubicación:</b> La técnica de multiprogramación requiere que varios programas ocupen la memoria al mismo tiempo. Sin embargo, no se sabe con anticipación dónde será cargado cada programa, por lo que no es práctico usar direccionamiento absoluto de memoria.</li>
+        <li><b>Organización física:</b> Debido al costo de una memoria principal rápida, ésta se usa en conjunto con una memoria secundaria mucho más lenta (y por consiguiente, barata) a fines de extender su capacidad.</li>
+        <li><b>Organización lógica:</b> Aunque la mayor parte de las memorias son organizadas linealmente con un direccionamiento secuencial, esto difícilmente concuerde con el camino seguido por el programa, debido al uso de procedimientos, funciones, subrutinas, arreglos, etc.</li>
+      </ul>
+      <p><b>Ensamblador vs Compilador:</b> En general, un ensamblador tiene un administrador de memoria más limitado que un compilador. En la mayoría de los lenguajes de programación, el uso de punteros no estaba vigilado, por lo que se tienen muchos problemas con el uso de memoria. Los lenguajes más recientes controlan el uso de punteros y tienen un programa denominado recolector de basura que se encarga de limpiar la memoria no utilizada, mejorando el desempeño.</p>
+    <p id="bibliografia">Bibliografía:<br><br>4.4 Administración de memoria. (s. f.). https://lenguajesyautomatas2.blogspot.com/p/44-administracion-de-memoria.html<br>Figueroa, A. B. L. (s. f.). 4.4 Administrador de memoria. https://alexisbladimirlopezfigueroa1998.blogspot.com/2019/10/44-administrador-de-memoria.html<br>LENGUAJES & AUTÓMATAS 2 - UNIDAD III. OPTIMIZACIÓN. (2023, 26 noviembre). Genially. https://view.genial.ly/654ab839789e0900105d9885/presentation-lenguajes-and-automatas-2-unidad-iii-optimizacion<br>Lenguajes y Automatas 2. (s. f.-a). https://l-byte0.github.io/Lenguajes-Automatas-ll/pags/unidadUno.html<br>Lenguajes y Automatas 2. (s. f.-b). https://l-byte0.github.io/Lenguajes-Automatas-ll/pags/unidad4.html</p>
+  </div>
+  <div w3-include-html="footer.html"></div>
+</body>
+
+<script>
+  includeHTML();
+</script>
+
+</html>

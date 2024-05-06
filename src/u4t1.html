@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Apuntes de lenguajes y automatas II</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/harry.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="icon" href="../img/logo.png" type="image/png">
+  <script src="../js/insertarHTML.js"></script>
+</head>
+
+<body>
+  <div w3-include-html="menu.html"></div>
+  <div id="body">
+    <h1>4.1 Registros</h1>
+    <img src="https://l-byte0.github.io/Lenguajes-Automatas-ll/img/unidadCuatro/registros.jpg"
+      alt="Imagen alusiva al tema">
+    <p>Los registros son una parte esencial de la computadora, específicamente de la memoria principal. Existen diversos tipos de registros, algunos de propósito general y otros de uso exclusivo. <br><br><b>Registros de propósito general:</b> Estos registros son utilizados para cierto tipo de funciones. Existen registros acumuladores, puntero de instrucción, de pila, entre otros. Algunos ejemplos son:</p>
+    <ul>
+      <li><b>AX:</b> Registro acumulador. Es el principal empleado en las operaciones aritméticas.</li>
+      <li><b>BX:</b> Registro base. Se usa para indicar un desplazamiento.</li>
+      <li><b>CX:</b> Registro contador. Se usa como contador en los bucles</li>
+      <li><b>DX:</b> Registro de datos</li>
+    </ul>
+    <p><b>Registros de segmentos:</b> Estos registros contienen la dirección de las distintas áreas de memoria. Algunos ejemplos son:</p>
+    <ul>
+      <li><b>CS:</b> Registro de segmento de código. Contiene la dirección de las instrucciones del programa.</li>
+      <li><b>DS:</b> Registro segmento de datos. Contiene la dirección del área de memoria donde se encuentran los datos del programa.</li>
+      <li><b>SS:</b> Registro segmento de pila. Contiene la dirección del segmento de pila.</li>
+      <li><b>ES:</b> Registro segmento extra. Contiene la dirección del segmento extra.</li>
+    </ul>
+    <p><b>Registros punteros de pila:</b> Estos registros contienen la dirección relativa al segmento de la pila. Algunos ejemplos son:</p>
+    <ul>
+      <li><b>SP:</b> Puntero de la pila.</li>
+      <li><b>BP:</b> Puntero base.</li>
+    </ul>
+    <p><b>Registros Índice:</b> Estos registros están disponibles para direccionamiento indexado y para sumas y restas. Algunos ejemplos son:</p>
+    <ul>
+      <li><b>SI:</b> Registro índice fuente.</li>
+      <li><b>DI:</b> Registro índice destino.</li>
+    </ul>
+    <p id="bibliografia">Bibliografía:<br><br>4.1 registros. (s. f.). https://lenguajesyautomatas2.blogspot.com/p/41-registros.html<br>Ruiz, A. (s. f.). 4.1 registros. https://alexisruizclemente1998.blogspot.com/2019/10/41-registros.html</p>
+  </div>
+  <div w3-include-html="footer.html"></div>
+</body>
+
+<script>
+  includeHTML();
+</script>
+
+</html>
